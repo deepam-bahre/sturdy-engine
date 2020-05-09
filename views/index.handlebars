@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<style>
+    body {
+    font-size: 16px;
+}
+.txtleft {
+    margin-left: 6rem;
+    line-height: 5rem;
+}
+</style>
+</head>
+  <body>
+<div class="container">
+<h2>Welcome to your Home Page</h2>
+
+<h3>Short Url</h3>
+<p>Home:<a href="https://tinyurl.com/453jx" onClick="HomeClick()">https://tinyurl.com/453jx</a> <span class="p-3 mb-2 bg-primary txtleft text-white"><a id="home">0</a></span></p>
+<p>Login: <a href="https://tinyurl.com/yb9e4w7j" onClick="LoginClick()">https://tinyurl.com/yb9e4w7j</a><span class="p-3 mb-2 bg-primary txtleft text-white"><a id="login">0</a></span></p>
+<p>Register: <a href="https://tinyurl.com/yabzznqm" onClick="RegisterClick()">https://tinyurl.com/yabzznqm</a><span class="p-3 mb-2 bg-primary txtleft text-white"><a id="register">0</a></span></p>
+<p>All Users:<a href="https://tinyurl.com/y7hvqvhv" onClick="AllUserClick()">https://tinyurl.com/y7hvqvhv</a><span class="p-3 mb-2 bg-primary txtleft text-white"><a id="AllUser">0</a></span></p>
+<p>Profile:<a href="https://tinyurl.com/yxbskbuy" onClick="ProfileClick()">https://tinyurl.com/yxbskbuy</a><span class="p-3 mb-2 bg-primary txtleft text-white"><a id="profile">0</a></span></p>
+
+<p>Test:<a href="https://tinyurl.com/ycsdhfya" onClick="DocClick()">https://tinyurl.com/ycsdhfya</a><span class="p-3 mb-2 bg-primary txtleft text-white"><a id="doc">0</a></span></p>
+
+</div>
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var Home_clicks = 0;
+    var Login_clicks = 0;
+    var Register_clicks = 0;
+    var AllUser_clicks = 0;
+    var Profile_clicks = 0;
+    var Doc_clicks = 0;
+    function HomeClick() {
+        Home_clicks += 1;
+        document.getElementById("home").innerHTML = Home_clicks;
+    };
+    function LoginClick() {
+        Login_clicks += 1;
+        document.getElementById("login").innerHTML = Login_clicks;
+    };
+    function RegisterClick() {
+        Register_clicks += 1;
+        document.getElementById("register").innerHTML = Register_clicks;
+    };
+    function AllUserClick() {
+        AllUser_clicks += 1;
+        document.getElementById("AllUser").innerHTML = AllUser_clicks;
+    };
+    function ProfileClick() {
+        Profile_clicks += 1;
+        document.getElementById("profile").innerHTML = Profile_clicks;
+    };
+    function DocClick() {
+        Doc_clicks += 1;
+        document.getElementById("doc").innerHTML = Doc_clicks;
+    };
+
+</script>
+</body>
+</html>  
