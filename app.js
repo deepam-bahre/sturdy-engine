@@ -7,7 +7,7 @@ var session = require('express-session');
 var passport = require('passport');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/URLShortener',{ useNewUrlParser: true },function(){
+mongoose.connect('mongodb+srv://deepambahre:<password>@april-retest-xvoqs.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true },function(){
     console.log('connected to mongodb');
 });
 
